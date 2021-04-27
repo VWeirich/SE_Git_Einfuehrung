@@ -1,0 +1,7 @@
+Die groben Kapitel sind:
+Was ist Git?
+Entwicklung
+Installation
+Einführung
+Wichtige Befehle
+Wann ist Git sinnvoll/Alternativen
