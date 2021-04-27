@@ -1,2 +1,7 @@
 git init
 https://git-scm.com/book/de/v2/Git-Grundlagen-Ein-Git-Repository-anlegen
+
+git add
+git add LICENSE
+git commit -m 'eine commit message'
+
