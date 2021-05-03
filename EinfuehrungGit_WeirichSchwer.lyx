@@ -1304,7 +1304,7 @@ Praxis
 \end_layout
 
 \begin_layout Subsection
-Grundidee
+Befehle
 \end_layout
 
 \begin_layout Frame
@@ -1312,7 +1312,7 @@ Grundidee
 status open
 
 \begin_layout Plain Layout
-Überschriften müssen informativ sein
+git innit
 \end_layout
 
 \end_inset
@@ -1321,16 +1321,79 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Theorem
-Auf dem ersten Overlay.
+\begin_layout Itemize
+Erstellt im ausgewählten Verzeichnis den
+\emph on
+ .git 
+\emph default
+- Ordner
 \end_layout
 
-\begin_layout Pause
+\begin_layout Itemize
+Der 
+\emph on
+.git - 
+\emph default
+Ordner enthält alle Informationen über das Repository:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Enthält alle Referenzen (.git/refs)
+\end_layout
+
+\begin_layout Itemize
+Enthält alle Dateien und ihre Versionen (.git/objects) 
+\end_layout
+
+\begin_layout Itemize
+Den aktuellen Stand des Repositories 
+\end_layout
+
+\begin_layout Itemize
+uvm.
+ Siehe Abschnitt 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Dateisystem"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
 
 \end_layout
 
-\begin_layout Corollary
-Auf dem zweiten Overlay.
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+git add/stage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+fügt eine Datei zur Versionierung hinzu 
+\end_layout
+
+\begin_layout Itemize
+fügt eine Datei auch sofort zur Stage hinzu
 \end_layout
 
 \end_deeper
@@ -1346,7 +1409,7 @@ Auf dem zweiten Overlay.
 status open
 
 \begin_layout Plain Layout
-Überschriften müssen informativ sein
+git rm
 \end_layout
 
 \end_inset
@@ -1355,61 +1418,565 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout ColumnsTopAligned
+\begin_layout Itemize
+Löscht eine Datei aus dem Arbeitsverzeichnis
+\end_layout
+
+\begin_layout Itemize
+Die Datei wird nicht weiter versioniert, befindet sich aber weiterhin in
+ der Historie
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+git commit
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_deeper
-\begin_layout Column
-5cm
+\begin_layout Itemize
+alle Veränderungen in der Stage werden als neue Revision gespeichert
 \end_layout
 
-\begin_layout Theorem
-\begin_inset Argument 1
+\begin_layout Itemize
+die Flag -m 
+\begin_inset Quotes ald
+\end_inset
+
+commitnachricht
+\begin_inset Quotes ard
+\end_inset
+
+ fügt eine Beschreibung der durchgeführten Änderungen hinzu
+\end_layout
+
+\begin_layout Itemize
+die Commitnachrichten sollten aussagekräftig sein!
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-
-1-
+git branch
 \end_layout
 
 \end_inset
 
-In der linken Spalte.
+
 \end_layout
 
-\begin_layout Column
-5cm
+\begin_deeper
+\begin_layout Itemize
+gibt alleine den aktuellen Branch aus auf dem man ist
 \end_layout
 
-\begin_layout Corollary
-\begin_inset Argument 1
+\begin_layout Itemize
+man erstellt einen neuen Branch mit: git branch 
+\begin_inset Quotes ald
+\end_inset
+
+branchname
+\begin_inset Quotes ard
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+git branch -d löscht einen Branch
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-
-2-
+git checkout
 \end_layout
 
 \end_inset
 
-In der rechten Spalte.
-\begin_inset Newline newline
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+mit git checkout wechselt man den Branch
+\end_layout
+
+\begin_layout Itemize
+git checkout -b erstellt einen neuen Branch und wechselt ihn sofort
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
 \end_inset
 
-Neue Zeile.
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+git clone/fetch
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+clone
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+erstellt einen vollständige Kopie eines anderen Repositories
+\end_layout
+
+\begin_layout Itemize
+erstellt remote-tracking branches
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+fetch
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+aktualisiert alle remote-tracking branches
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+git push/pull
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+push
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+wird versuchen den aktuellen Stand des Repositorys mit dem remote Stand
+ zu verbinden (merge)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+pull
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+versucht den Zustand des entfernten (remote) Repositorys mit dem aktuellen
+ Zustand zu verbinden
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Subsection
+Dateisystem
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Dateisystem"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Der .git-Ordner
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/david-gitOrdner.jpg
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inhalte des .git-Ordners
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ordner im .git-Ordner
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+hooks Hier können Skripte abgelegt werden die z.B.
+ bei einem Commit aktiviert werden
+\end_layout
+
+\begin_layout Description
+info enthält die exclude Datei, ähnlich wie .gitignore
+\end_layout
+
+\begin_layout Description
+logs enthält die Historie der Branches
+\end_layout
+
+\begin_layout Description
+objects hier werden die Dateien wirklich gespeichert in allen Versionen!
+\end_layout
+
+\begin_layout Description
+refs hier werden alle referenzen abgelegt, z.B.
+ wenn man Tags für einzelne Branches benutzt
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Dateien im .git-Ordner
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+COMMIT_EDITMSG Enthält die letzte Commit-Nachricht
+\end_layout
+
+\begin_layout Description
+config Enthält Einstellungen, u.A.
+ wo die Remote Branches liegen
+\end_layout
+
+\begin_layout Description
+description Enthält eine Beschreibung die von manchen Seiten verwendet wird
+\end_layout
+
+\begin_layout Description
+FETCH_HEAD Die SHA-Hashes (IDs) der zuletzt mit fetch aktualisierten Branches
+\end_layout
+
+\begin_layout Description
+HEAD Die Referenz auf die Version die betrachtet wird
+\end_layout
+
+\begin_layout Description
+index Im Prinzip der Staging Bereich, mit Zeitstempel, Dateinmaen und Hashes
+ von bekannten Dateien
+\end_layout
+
+\begin_layout Description
+ORIG_HEAD In diesen Branch wird gemerged
+\end_layout
+
+\begin_layout Standard
+uvm.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Die .gitignore-Datei
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Wird wie eine normale Datei versioniert
+\end_layout
+
+\begin_layout Itemize
+Enthält eine Liste von Dateien die nicht versioniert werden sollen
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ausgaben von Programmen
+\end_layout
+
+\begin_layout Itemize
+Logdateien
+\end_layout
+
+\begin_layout Itemize
+tmp/
+\end_layout
+
+\begin_layout Itemize
+Dateien des Editors (z.B.
+ .vscode)
 \end_layout
 
 \end_deeper
 \end_deeper
 \begin_layout Subsection
-Befehle
+Alternativen 
 \end_layout
 
-\begin_layout Subsection
-Pro und 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Andere VCS Systeme
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Git und andere Systeme wie zum Beispiel
+\end_layout
+
+\begin_layout Itemize
+Subversion (Frei)
+\end_layout
+
+\begin_layout Itemize
+Mercurial (Frei)
+\end_layout
+
+\begin_layout Itemize
+SVN (Frei)
+\end_layout
+
+\begin_layout Itemize
+BitKeeper
+\end_layout
+
+\begin_layout Standard
+sind gut zur 
+\emph on
+Textversionskontrolle.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Binary Repository Managers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Verwaltung von Binaries
+\end_layout
+
+\begin_layout Itemize
+Sind Hierarchische Systeme (Baumstruktur)
+\end_layout
+
+\begin_layout Itemize
+werden z.B.
+ verwendet zur Verwaltung von Systemen
+\end_layout
+
+\begin_layout Itemize
+z.B.:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+JFrog Artifactory
+\end_layout
+
+\begin_layout Itemize
+BinTray
+\end_layout
+
+\begin_layout Itemize
+SonaType Nexus
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Zukunft?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Cloud!
+\end_layout
+
+\begin_layout Itemize
+Azure DevOps
+\end_layout
+
+\begin_layout Itemize
+AWS CodePipeline
+\end_layout
+
+\end_deeper
 \begin_layout Section*
 Abschluss
 \end_layout
@@ -1428,296 +1995,24 @@ Zusammenfassung
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Die Zusammenfassung sollte sehr kurz sein.
+\begin_layout Itemize
+Mit Git kann man die eigenen Projekte versionieren
 \end_layout
 
-\end_inset
-
+\begin_layout Pause
 
 \end_layout
 
 \begin_layout Itemize
-Die
-\color none
- 
-\color inherit
-
-\begin_inset Flex Alert
-status open
-
-\begin_layout Plain Layout
-erste Hauptbotschaft
+Mit Git kann man einfach mti anderen Zusammenarbeiten
 \end_layout
 
-\end_inset
-
-
-\color none
- des Vortrags in ein bis zwei Zeilen.
-\end_layout
-
-\begin_layout Itemize
-Die
-\color none
- 
-\color inherit
-
-\begin_inset Flex Alert
-status open
-
-\begin_layout Plain Layout
-zweite Hauptbotschaft
-\end_layout
-
-\end_inset
-
-
-\color none
- des Vortrags in ein bis zwei Zeilen.
-\end_layout
-
-\begin_layout Itemize
-Eventuell noch eine
-\color none
- 
-\color inherit
-
-\begin_inset Flex Alert
-status open
-
-\begin_layout Plain Layout
-dritte Botschaft
-\end_layout
-
-\end_inset
-
-
-\color none
-, aber das reicht dann auch.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Der folgende Ausblick ist optional.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
+\begin_layout Pause
 
 \end_layout
 
 \begin_layout Itemize
-Ausblick
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Etwas, was wir noch nicht lösen konnten.
-\end_layout
-
-\begin_layout Itemize
-Noch etwas, das wir noch nicht lösen konnten.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Section*
-\start_of_appendix
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Alles Nachfolgende ist optional und üblicherweise nicht nötig.
-\end_layout
-
-\end_inset
-
-Anhang
-\end_layout
-
-\begin_layout Subsection*
-Weiterführende Literatur
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status collapsed
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Weiterführende Literatur
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-beamertemplatebookbibitems
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Anfangen sollte man mit Übersichtswerken.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "Autor1990"
-literal "true"
-
-\end_inset
-
-A.
- Autor.
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
- 
-\emph on
-Einführung in das Präsentationswesen
-\emph default
-.
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
- Klein-Verlag, 1990.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-beamertemplatearticlebibitems
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Vertiefende Literatur kommt später.
- Die Liste sollte kurz sein.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "Jemand2002"
-literal "true"
-
-\end_inset
-
-S.
- Jemand.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
- On this and that
-\emph on
-.
-
-\emph default
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
-
-\emph on
-Journal on This and That
-\emph default
-.
- 2(1):50–100, 2000.
+Fragen?
 \end_layout
 
 \end_deeper
