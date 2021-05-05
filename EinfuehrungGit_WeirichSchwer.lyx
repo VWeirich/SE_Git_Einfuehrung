@@ -601,7 +601,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/vcs-distributed.png
+	filename images/vcs-distributed.png
 	scale 80
 	rotateOrigin center
 
@@ -661,6 +661,7 @@ Zugangsprobleme für Linux-Kernel Entwickler
 Anforderungen für das neue VCS:
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 Unterstützung verteilter Arbeitsabläufe
 \end_layout
@@ -674,7 +675,8 @@ Hohe Effizienz
 \end_layout
 
 \end_deeper
-\begin_layout Subsection*
+\end_deeper
+\begin_layout Subsection
 Installation und Einrichtung
 \end_layout
 
@@ -696,11 +698,11 @@ Installation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/1.png
+	filename images/1.png
 	scale 65
 	rotateOrigin center
 
@@ -756,11 +758,11 @@ Installation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/2.png
+	filename images/2.png
 	scale 65
 	rotateOrigin center
 
@@ -816,11 +818,11 @@ Installation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/3.png
+	filename images/3.png
 	scale 65
 	rotateOrigin center
 
@@ -876,7 +878,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/4.png
+	filename images/4.png
 	scale 65
 	rotateOrigin center
 
@@ -928,11 +930,11 @@ Installation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/5.png
+	filename images/5.png
 	scale 65
 	rotateOrigin center
 
@@ -984,11 +986,11 @@ Installation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/6.png
+	filename images/6.png
 	scale 65
 	rotateOrigin center
 
@@ -1044,7 +1046,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/7.png
+	filename images/7.png
 	scale 65
 	rotateOrigin center
 
@@ -1100,7 +1102,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/8.png
+	filename images/8.png
 	scale 65
 	rotateOrigin center
 
@@ -1156,7 +1158,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/9.png
+	filename images/9.png
 	scale 65
 	rotateOrigin center
 
@@ -1169,7 +1171,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Credential helpfer
+Credential helper
 \end_layout
 
 \end_inset
@@ -1212,7 +1214,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/10.png
+	filename images/10.png
 	scale 65
 	rotateOrigin center
 
@@ -1268,7 +1270,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/vweir/OneDrive/Desktop/Github/11.png
+	filename images/11.png
 	scale 65
 	rotateOrigin center
 
