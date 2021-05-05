@@ -674,7 +674,7 @@ Hohe Effizienz
 \end_layout
 
 \end_deeper
-\begin_layout Subsection*
+\begin_layout Subsection
 Installation und Einrichtung
 \end_layout
 
@@ -1304,6 +1304,62 @@ Praxis
 \end_layout
 
 \begin_layout Subsection
+Grundidee
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Branchingmodell
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+sdjflsk
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Stage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+sdfsdf
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Befehle
 \end_layout
 
@@ -1628,219 +1684,6 @@ pull
 \begin_layout Itemize
 versucht den Zustand des entfernten (remote) Repositorys mit dem aktuellen
  Zustand zu verbinden
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Subsection
-Dateisystem
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Dateisystem"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Der .git-Ordner
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/david-gitOrdner.jpg
-	scale 60
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Inhalte des .git-Ordners
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Ordner im .git-Ordner
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-hooks Hier können Skripte abgelegt werden die z.B.
- bei einem Commit aktiviert werden
-\end_layout
-
-\begin_layout Description
-info enthält die exclude Datei, ähnlich wie .gitignore
-\end_layout
-
-\begin_layout Description
-logs enthält die Historie der Branches
-\end_layout
-
-\begin_layout Description
-objects hier werden die Dateien wirklich gespeichert in allen Versionen!
-\end_layout
-
-\begin_layout Description
-refs hier werden alle referenzen abgelegt, z.B.
- wenn man Tags für einzelne Branches benutzt
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Dateien im .git-Ordner
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-COMMIT_EDITMSG Enthält die letzte Commit-Nachricht
-\end_layout
-
-\begin_layout Description
-config Enthält Einstellungen, u.A.
- wo die Remote Branches liegen
-\end_layout
-
-\begin_layout Description
-description Enthält eine Beschreibung die von manchen Seiten verwendet wird
-\end_layout
-
-\begin_layout Description
-FETCH_HEAD Die SHA-Hashes (IDs) der zuletzt mit fetch aktualisierten Branches
-\end_layout
-
-\begin_layout Description
-HEAD Die Referenz auf die Version die betrachtet wird
-\end_layout
-
-\begin_layout Description
-index Im Prinzip der Staging Bereich, mit Zeitstempel, Dateinmaen und Hashes
- von bekannten Dateien
-\end_layout
-
-\begin_layout Description
-ORIG_HEAD In diesen Branch wird gemerged
-\end_layout
-
-\begin_layout Standard
-uvm.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Die .gitignore-Datei
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Wird wie eine normale Datei versioniert
-\end_layout
-
-\begin_layout Itemize
-Enthält eine Liste von Dateien die nicht versioniert werden sollen
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Ausgaben von Programmen
-\end_layout
-
-\begin_layout Itemize
-Logdateien
-\end_layout
-
-\begin_layout Itemize
-tmp/
-\end_layout
-
-\begin_layout Itemize
-Dateien des Editors (z.B.
- .vscode)
 \end_layout
 
 \end_deeper
