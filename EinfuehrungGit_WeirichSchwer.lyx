@@ -1310,7 +1310,7 @@ Grundidee
 status open
 
 \begin_layout Plain Layout
-Branchingmodell
+Main
 \end_layout
 
 \end_inset
@@ -1320,7 +1320,25 @@ Branchingmodell
 
 \begin_deeper
 \begin_layout Standard
-sdjflsk
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gitFlow/01_Main.png
+	height 6cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1336,7 +1354,7 @@ sdjflsk
 status open
 
 \begin_layout Plain Layout
-Stage
+Branches
 \end_layout
 
 \end_inset
@@ -1346,7 +1364,201 @@ Stage
 
 \begin_deeper
 \begin_layout Standard
-sdfsdf
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gitFlow/002_branches.png
+	height 6cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+GitFlow - Develop
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gitFlow/02_Develop.png
+	height 6cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+GitFlow - Feature
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gitFlow/03_Feature.png
+	height 6cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+GitFlow - Release
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gitFlow/04_Release.png
+	height 6cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+GitFlow - HotFix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/gitFlow/05_hotfix.png
+	height 6cm
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -1402,21 +1614,6 @@ Enthält alle Dateien und ihre Versionen (.git/objects)
 
 \begin_layout Itemize
 Den aktuellen Stand des Repositories 
-\end_layout
-
-\begin_layout Itemize
-uvm.
- Siehe Abschnitt 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Dateisystem"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -1508,7 +1705,9 @@ alle Veränderungen in der Stage werden als neue Revision gespeichert
 \end_layout
 
 \begin_layout Itemize
-die Flag -m 
+die Flag 
+\emph on
+-m 
 \begin_inset Quotes ald
 \end_inset
 
@@ -1516,6 +1715,8 @@ commitnachricht
 \begin_inset Quotes ard
 \end_inset
 
+
+\emph default
  fügt eine Beschreibung der durchgeführten Änderungen hinzu
 \end_layout
 
@@ -1546,11 +1747,13 @@ git branch
 
 \begin_deeper
 \begin_layout Itemize
-gibt alleine den aktuellen Branch aus auf dem man ist
+gibt alleine den aktuellen Branch aus
 \end_layout
 
 \begin_layout Itemize
-man erstellt einen neuen Branch mit: git branch 
+man erstellt einen neuen Branch mit: 
+\emph on
+git branch 
 \begin_inset Quotes ald
 \end_inset
 
@@ -1558,11 +1761,15 @@ branchname
 \begin_inset Quotes ard
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Itemize
-git branch -d löscht einen Branch
+
+\emph on
+git branch -d
+\emph default
+ löscht einen Branch
 \end_layout
 
 \end_deeper
@@ -1578,7 +1785,7 @@ git branch -d löscht einen Branch
 status open
 
 \begin_layout Plain Layout
-git checkout
+git checkout/switch
 \end_layout
 
 \end_inset
@@ -1588,11 +1795,51 @@ git checkout
 
 \begin_deeper
 \begin_layout Itemize
-mit git checkout wechselt man den Branch
+mit 
+\emph on
+git checkout/switch 
+\begin_inset Quotes ald
+\end_inset
+
+branchname
+\begin_inset Quotes ard
+\end_inset
+
+
+\emph default
+ wechselt man den Branch
 \end_layout
 
 \begin_layout Itemize
-git checkout -b erstellt einen neuen Branch und wechselt ihn sofort
+
+\emph on
+git checkout -b 
+\begin_inset Quotes ald
+\end_inset
+
+branchname
+\begin_inset Quotes ard
+\end_inset
+
+
+\emph default
+ erstellt einen neuen Branch und wechselt ihn sofort
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+git switch -c 
+\begin_inset Quotes ald
+\end_inset
+
+branchname
+\begin_inset Quotes ard
+\end_inset
+
+
+\emph default
+ erstellt den Branch und wechselt ihn sofort
 \end_layout
 
 \end_deeper
@@ -1784,40 +2031,6 @@ SonaType Nexus
 
 \end_deeper
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Zukunft?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Cloud!
-\end_layout
-
-\begin_layout Itemize
-Azure DevOps
-\end_layout
-
-\begin_layout Itemize
-AWS CodePipeline
-\end_layout
-
-\end_deeper
 \begin_layout Section*
 Abschluss
 \end_layout
@@ -1837,7 +2050,7 @@ Zusammenfassung
 
 \begin_deeper
 \begin_layout Itemize
-Mit Git kann man die eigenen Projekte versionieren
+Mit Git kann man die (eigenen) Projekte versionieren
 \end_layout
 
 \begin_layout Pause
@@ -1845,7 +2058,7 @@ Mit Git kann man die eigenen Projekte versionieren
 \end_layout
 
 \begin_layout Itemize
-Mit Git kann man einfach mti anderen Zusammenarbeiten
+Mit Git kann man parallel mit anderen Zusammenarbeiten
 \end_layout
 
 \begin_layout Pause
